@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffcdd2</color>
+    <color name="white">#FFFF</color>
+    <color name="logincolor">#fe00aeff</color>
+
+
+
+    <color name="startcolor">#fff1f3</color>
+    <color name="primaryLightColor">#ffffff</color>
+    <color name="colorPrimaryDark">#cb9ca1</color>
+    <color name="secondaryColor">#fce4ec</color>
+    <color name="secondaryLightColor">#ffffff</color>
+    <color name="secondaryDarkColor">#c9b2ba</color>
+    <color name="primaryTextColor">#c49b80</color>
+    <color name="secondaryTextColor">#c49b80</color>
+    <color name="colorAccent">#c9b2ba</color>
+
+
+
+    <color name="yellow">#f2eb68</color>
+    <color name="record">#dd894c66</color>
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
+    <color name="btn_down">#ffffff</color>
+    <color name="red" >#b33737</color>
+</resources>
