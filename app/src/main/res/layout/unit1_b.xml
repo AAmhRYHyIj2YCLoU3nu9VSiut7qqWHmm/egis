@@ -1,104 +1,644 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/default_card_height"
-            android:layout_gravity="top"
-            android:gravity="start"
-            android:layout_marginHorizontal="@dimen/default_card_height"
-            android:orientation="vertical">
 
-            <TableLayout
-                xmlns:android="http://schemas.android.com/apk/res/android"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:shrinkColumns="*"  android:stretchColumns="*" android:background="#ffffff">
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginHorizontal="@dimen/default_card_height"
+                android:layout_marginTop="@dimen/default_card_height"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:shrinkColumns="*"
+                    android:stretchColumns="*">
 
 
-                <!-- Row 1 with single column -->
-                <TableRow
-                    android:layout_height="wrap_content"
-                    android:layout_width="fill_parent"
-                    android:gravity="center_horizontal">
+                    <!-- Row 1 with single column -->
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
 
 
-                    <TextView
-                        android:layout_width="match_parent" android:layout_height="wrap_content"
-                        android:textSize="18dp" android:text="positive"
-                        android:layout_span="3"
-                        android:padding="18dip" android:background="#b0b0b0"
-                        android:textColor="#000"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_span="3"
+                            android:background="#b0b0b0"
+                            android:padding="18dip"
+                            android:text="positive"
+                            android:textColor="#000"
+                            android:textSize="18dp" />
 
 
-                </TableRow>
+                    </TableRow>
 
-                <!-- Row 2 with 3 columns -->
+                    <!-- Row 2 with 3 columns -->
 
 
-                <TableRow
-                    android:id="@+id/tableRow1"
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent">
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-                    <TextView
-                        android:id="@+id/TextView04"
-                        android:layout_weight="1"
-                        android:background="#dcdcdc"
-                        android:gravity="center"
-                        android:padding="20dip"
-                        android:text="I"
-                        android:textColor="#000000" />
+                        <TextView
+                            android:id="@+id/TextView04"
+                            android:layout_weight="1"
+                            android:background="#dcdcdc"
+                            android:gravity="center"
+                            android:padding="20dip"
+                            android:text="I"
+                            android:textColor="#000000" />
 
-                    <TextView
-                        android:id="@+id/TextView04"
-                        android:layout_weight="1"
-                        android:background="#d3d3d3"
-                        android:gravity="center"
-                        android:padding="20dip"
-                        android:text="am"
-                        android:textColor="#000000" />
+                        <TextView
+                            android:id="@+id/TextView04"
+                            android:layout_weight="1"
+                            android:background="#d3d3d3"
+                            android:gravity="center"
+                            android:padding="20dip"
+                            android:text="am"
+                            android:textColor="#000000" />
 
-                    <TextView
-                        android:id="@+id/TextView04"
-                        android:layout_weight="1"
-                        android:background="#cac9c9"
-                        android:gravity="center"
-                        android:padding="20dip"
-                        android:text="(I'm)"
-                        android:textColor="#000000" />
+                        <TextView
+                            android:id="@+id/TextView04"
+                            android:layout_weight="1"
+                            android:background="#cac9c9"
+                            android:gravity="center"
+                            android:padding="20dip"
+                            android:text="(I'm)"
+                            android:textColor="#000000"
+                            android:textIsSelectable="true" />
 
-                </TableRow>
+                    </TableRow>
 
-                <!-- Row 3 with 2 columns -->
-                <TableRow
-                    android:layout_height="wrap_content"
-                    android:layout_width="fill_parent"
-                    android:gravity="center_horizontal">
+                    <!--it is for new row identifying -->
 
-                    <TextView
-                        android:id="@+id/TextView04"
-                        android:text="Row 3 column 1"
-                        android:layout_weight="1"
-                        android:background="#b0b0b0"
-                    android:textColor="#000000"
-                    android:padding="18dip" android:gravity="center"/>
+                    <TableRow android:id="@+id/tableRow1">
 
-                    <TextView
-                        android:id="@+id/TextView09" android:text="Row 3 column 2"
-                        android:layout_weight="1" android:background="#a09f9f"
-                        android:textColor="#000000"
-                        android:padding="18dip" android:gravity="center"/>
-                </TableRow>
+                        <TextView
+                            android:id="@+id/TextView04"
+                            android:layout_height="2dp"
+                            android:layout_weight="1"
+                            android:background="#a97676"
+                            android:gravity="center" />
 
-            </TableLayout>
+                    </TableRow>
+
+
+                    <!-- new new Row 2 with 3 columns -->
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:id="@+id/TextView04"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#dcdcdc"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="6dip"
+                                android:text="he"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="6dip"
+                                android:text="she"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="it"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/TextView04"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#d3d3d3"
+                            android:gravity="center"
+                            android:padding="20dip"
+                            android:text="is"
+                            android:textColor="#000000" />
+
+
+                        <LinearLayout
+                            android:id="@+id/TextView04"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#dcdcdc"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="6dip"
+                                android:text="(he's)"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="6dip"
+                                android:text="(she's)"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="(it's)"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+
+
+                    </TableRow>
+
+                    <!--it is for new row identifying -->
+
+                    <TableRow android:id="@+id/tableRow1">
+
+                        <TextView
+                            android:id="@+id/TextView04"
+                            android:layout_height="2dp"
+                            android:layout_weight="1"
+                            android:background="#a97676"
+                            android:gravity="center" />
+
+                    </TableRow>
+
+
+                    <!-- new new Row 2 with 3 columns -->
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:id="@+id/TextView04"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#dcdcdc"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="6dip"
+                                android:text="we"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="6dip"
+                                android:text="you"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="they"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/TextView04"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#d3d3d3"
+                            android:gravity="center"
+                            android:padding="20dip"
+                            android:text="are"
+                            android:textColor="#000000" />
+
+
+                        <LinearLayout
+                            android:id="@+id/TextView04"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#dcdcdc"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="6dip"
+                                android:text="(we're)"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="6dip"
+                                android:text="(you're)"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="(they're)"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+
+
+                    </TableRow>
+
+
+                    <!-- Row 3 with 2 columns -->
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/TextView04"
+                            android:layout_weight="1"
+                            android:background="#b0b0b0"
+                            android:gravity="center"
+                            android:padding="18dip"
+                            android:text="Row 3 column 1"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/TextView09"
+                            android:layout_weight="1"
+                            android:background="#a09f9f"
+                            android:gravity="center"
+                            android:padding="18dip"
+                            android:text="Row 3 column 2"
+                            android:textColor="#000000" />
+                    </TableRow>
+
+                </TableLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/default_card_height"
+                    android:background="#ffffff"
+                    android:shrinkColumns="*"
+                    android:stretchColumns="*">
+
+
+                    <!-- Row 1 with single column -->
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_span="3"
+                            android:background="#b0b0b0"
+                            android:padding="18dip"
+                            android:text="positive"
+                            android:textColor="#000"
+                            android:textSize="18dp" />
+
+
+                    </TableRow>
+
+                    <!-- Row 2 with 3 columns -->
+
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/TextView04"
+                            android:layout_weight="1"
+                            android:background="#dcdcdc"
+                            android:gravity="center"
+                            android:padding="20dip"
+                            android:text="I"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/TextView04"
+                            android:layout_weight="1"
+                            android:background="#d3d3d3"
+                            android:gravity="center"
+                            android:padding="20dip"
+                            android:text="am"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/TextView04"
+                            android:layout_weight="1"
+                            android:background="#cac9c9"
+                            android:gravity="center"
+                            android:padding="20dip"
+                            android:text="(I'm)"
+                            android:textColor="#000000"
+                            android:textIsSelectable="true" />
+
+                    </TableRow>
+
+                    <!--it is for new row identifying -->
+
+                    <TableRow android:id="@+id/tableRow1">
+
+                        <TextView
+                            android:id="@+id/TextView04"
+                            android:layout_height="2dp"
+                            android:layout_weight="1"
+                            android:background="#a97676"
+                            android:gravity="center" />
+
+                    </TableRow>
+
+
+                    <!-- new new Row 2 with 3 columns -->
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:id="@+id/TextView04"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#dcdcdc"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="6dip"
+                                android:text="he"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="6dip"
+                                android:text="she"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="it"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/TextView04"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#d3d3d3"
+                            android:gravity="center"
+                            android:padding="20dip"
+                            android:text="is"
+                            android:textColor="#000000" />
+
+
+                        <LinearLayout
+                            android:id="@+id/TextView04"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#dcdcdc"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="6dip"
+                                android:text="(he's)"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="6dip"
+                                android:text="(she's)"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="(it's)"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+
+
+                    </TableRow>
+
+                    <!--it is for new row identifying -->
+
+                    <TableRow android:id="@+id/tableRow1">
+
+                        <TextView
+                            android:id="@+id/TextView04"
+                            android:layout_height="2dp"
+                            android:layout_weight="1"
+                            android:background="#a97676"
+                            android:gravity="center" />
+
+                    </TableRow>
+
+
+                    <!-- new new Row 2 with 3 columns -->
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:id="@+id/TextView04"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#dcdcdc"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="6dip"
+                                android:text="we"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="6dip"
+                                android:text="you"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="they"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/TextView04"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#d3d3d3"
+                            android:gravity="center"
+                            android:padding="20dip"
+                            android:text="are"
+                            android:textColor="#000000" />
+
+
+                        <LinearLayout
+                            android:id="@+id/TextView04"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#dcdcdc"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="6dip"
+                                android:text="(we're)"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="6dip"
+                                android:text="(you're)"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="(they're)"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+
+
+                    </TableRow>
+
+
+                    <!-- Row 3 with 2 columns -->
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/TextView04"
+                            android:layout_weight="1"
+                            android:background="#b0b0b0"
+                            android:gravity="center"
+                            android:padding="18dip"
+                            android:text="Row 3 column 1"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/TextView09"
+                            android:layout_weight="1"
+                            android:background="#a09f9f"
+                            android:gravity="center"
+                            android:padding="18dip"
+                            android:text="Row 3 column 2"
+                            android:textColor="#000000" />
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>
