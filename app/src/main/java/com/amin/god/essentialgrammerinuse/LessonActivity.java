@@ -68,7 +68,7 @@ public class LessonActivity extends AppCompatActivity implements Runnable {
         viewList.setOnItemClickListener((parent, view, position, id) -> {
             TextView gg = (TextView) (view.findViewById(R.id.name_text_view));
             gg.setTextColor(Color.RED);
-            Intent intent = new Intent(this, UnitActivity.class);
+            Intent intent = new Intent(this, TabActivity.class);
             Toast.makeText(LessonActivity.this, String.valueOf(position), Toast.LENGTH_SHORT).show();
 
             intent.putExtra("unit_bumber", position+1);
