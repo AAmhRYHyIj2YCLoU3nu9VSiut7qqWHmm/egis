@@ -1,5 +1,6 @@
 package com.amin.god.essentialgrammerinuse;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -27,6 +28,10 @@ public class TabActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tab);
 
+        Intent intent = getIntent();
+
+        int unit_number = intent.getIntExtra("unit_number", 0);
+
         toolbar = (Toolbar) findViewById(R.id.toolbar3);
         setSupportActionBar(toolbar);
 
@@ -35,22 +40,25 @@ public class TabActivity extends AppCompatActivity {
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
         viewPager = (ViewPager) findViewById(R.id.viewpager);
-        setupViewPager(viewPager);
+        setupViewPager(viewPager,unit_number);
 
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
     }
 
-    private void setupViewPager(ViewPager viewPager) {
+    private void setupViewPager(ViewPager viewPager, int unit_number) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         OneFragment fragment1 = new OneFragment();
         OneFragment fragment2 = new OneFragment();
         OneFragment fragment3 = new OneFragment();
         Bundle args = new Bundle();
         args.putString("segment", "A");
+        args.putInt("unit_number",unit_number);
         Bundle args2 = new Bundle();
         args2.putString("segment", "B");
+        args2.putInt("unit_number",unit_number);
         Bundle args3 = new Bundle();
+        args3.putInt("unit_number",unit_number);
         args3.putString("segment", "C");
         fragment1.setArguments(args);
         fragment2.setArguments(args2);

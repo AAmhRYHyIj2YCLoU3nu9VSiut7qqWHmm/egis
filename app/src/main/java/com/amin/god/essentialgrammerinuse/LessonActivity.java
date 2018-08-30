@@ -71,7 +71,7 @@ public class LessonActivity extends AppCompatActivity implements Runnable {
             Intent intent = new Intent(this, TabActivity.class);
             Toast.makeText(LessonActivity.this, String.valueOf(position), Toast.LENGTH_SHORT).show();
 
-            intent.putExtra("unit_bumber", position+1);
+            intent.putExtra("unit_number", position+1);
             LessonActivity.this.startActivity(intent);
         });
 
