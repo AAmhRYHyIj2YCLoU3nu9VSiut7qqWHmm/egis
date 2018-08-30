@@ -14,8 +14,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Unitctivity">
-
+            android:name=".UnitActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.amin.god.essentialgrammerinuse.LessonActivity" />
         </activity>
         <activity
             android:name=".StartActivity"

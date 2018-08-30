@@ -75,7 +75,7 @@ public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.MyViewHold
 //        holder.thumbnail.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
-//                Intent intent = new Intent(mContext, Unitctivity.class);
+//                Intent intent = new Intent(mContext, UnitActivity.class);
 //                intent.putExtra("name", album.getName());
 //                mContext.startActivity(intent);
 //            }
