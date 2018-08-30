@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#e76e2d</color>
-    <color name="white">#FFFF</color>
+    <color name="white">#ffffff</color>
     <color name="logincolor">#fe00aeff</color>
 
 
 
     <color name="startcolor">#fff1f3</color>
     <color name="primaryLightColor">#ffffff</color>
-    <color name="colorPrimaryDark">#cb9ca1</color>
-    <color name="secondaryColor">#fce4ec</color>
+    <color name="colorPrimaryDark">#e17435</color>
+    <color name="secondaryColor">#aa4b6b</color>
     <color name="secondaryLightColor">#ffffff</color>
-    <color name="secondaryDarkColor">#c9b2ba</color>
-    <color name="primaryTextColor">#c49b80</color>
-    <color name="secondaryTextColor">#c49b80</color>
+    <color name="secondaryDarkColor">#f17946</color>
+    <color name="primaryTextColor">#b45313</color>
+    <color name="secondaryTextColor">#b25b22</color>
     <color name="colorAccent">#c9b2ba</color>
 
 
@@ -26,7 +26,7 @@
     <color name="red" >#b33737</color>
 
 
-    <color name="textColorPrimary">#FFFFFF</color>
-    <color name="windowBackground">#FFFFFF</color>
+    <color name="textColorPrimary">#ffff</color>
+    <color name="windowBackground">#891e1e</color>
     <color name="navigationBarColor">#000000</color>
 </resources>
