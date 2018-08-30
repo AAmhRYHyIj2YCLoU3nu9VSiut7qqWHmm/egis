@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="I'm 22"
+            android:layout_gravity="center"
+            android:textSize="22sp"
+            android:padding="7dip" />
+    </TableRow>
+    <View
+        android:layout_height="0.5dip"
+        android:background="@color/colorPrimary"/>
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="My name is Lisa"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:padding="7dip" />
+    </TableRow>
+    <View
+        android:layout_height="0.5dip"
+        android:background="@color/colorPrimary"/>
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="I'm American.I'm from Chicago."
+            android:layout_gravity="center"
+            android:padding="7dip" />
+    </TableRow>
+    <View
+        android:layout_height="0.5dip"
+        android:background="@color/colorPrimary"/>
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="I'm Student"
+            android:layout_gravity="center"
+            android:padding="7dip" />
+    </TableRow>
+    <View
+        android:layout_height="0.5dip"
+        android:background="@color/colorPrimary"/>
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="My father is a doctor and my mother is journalist"
+            android:layout_gravity="center"
+            android:padding="7dip" />
+    </TableRow>
+    <View
+        android:layout_height="0.5dip"
+        android:background="@color/colorPrimary"/>
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="I'm not married"
+            android:layout_gravity="center"
+            android:padding="7dip" />
+    </TableRow>
+    <View
+        android:layout_height="0.5dip"
+        android:background="@color/colorPrimary"/>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="My favourite colour is blue"
+            android:layout_gravity="center"
+            android:padding="7dip" />
+    </TableRow>
+    <View
+        android:layout_height="0.5dip"
+        android:background="@color/colorPrimary"/>
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="My favourite sports are football and swimming."
+            android:layout_gravity="center"
+            android:padding="7dip" />
+    </TableRow>
+    <View
+        android:layout_height="0.5dip"
+        android:background="@color/colorPrimary"/>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="I'm intrested in art"
+            android:layout_gravity="center"
+            android:padding="7dip" />
+    </TableRow>
+    <View
+        android:layout_height="0.5dip"
+        android:background="@color/colorPrimary"/>
+
+</TableLayout>

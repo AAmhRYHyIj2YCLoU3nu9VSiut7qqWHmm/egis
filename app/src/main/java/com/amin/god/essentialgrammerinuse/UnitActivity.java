@@ -1,5 +1,6 @@
 package com.amin.god.essentialgrammerinuse;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -15,6 +16,8 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.alespero.expandablecardview.ExpandableCardView;
+
+import java.io.FileOutputStream;
 
 public class UnitActivity extends AppCompatActivity {
 
@@ -32,10 +35,18 @@ public class UnitActivity extends AppCompatActivity {
 
         ExpandableCardView acard = findViewById(R.id.a);
         acard.setOnExpandedListener((v, isExpanded) -> {
-//            Toast.makeText(UnitActivity.this, isExpanded ? "Expanded!" : "Collapsed!", Toast.LENGTH_SHORT).show()
-            TextView te = ((TextView) findViewById(R.id.content_text));
-            te.setText(R.string.action_settings);
 
+            String filename = "a.txt";
+            String fileContents = "Hello world!";
+            FileOutputStream outputStream;
+
+            try {
+                outputStream = openFileOutput(filename, Context.MODE_PRIVATE);
+                outputStream.write(fileContents.getBytes());
+                outputStream.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
 
         });
 
