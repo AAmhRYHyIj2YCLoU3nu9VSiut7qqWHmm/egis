@@ -3,30 +3,38 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/fragment_one">
-    <ScrollView
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:fillViewport="true"
 
         >
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-
-        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_card_height"
             android:layout_marginTop="60dp"
-            android:layout_weight="1"
-            android:gravity="center|top"
-            android:orientation="vertical"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent">
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="150dp"
+                android:layout_marginLeft="@dimen/default_card_height"
+                android:layout_marginRight="@dimen/default_card_height"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:scrollbars="vertical">
+
 
                 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:background="#ffffff"
                     android:shrinkColumns="*"
                     android:stretchColumns="*">
@@ -56,12 +64,12 @@
 
 
                     <TableRow
-                        android:id="@+id/tableRow1"
+
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
                         <TextView
-                            android:id="@+id/TextView04"
+
                             android:layout_weight="1"
                             android:background="#dcdcdc"
                             android:gravity="center"
@@ -70,7 +78,7 @@
                             android:textColor="#000000" />
 
                         <TextView
-                            android:id="@+id/TextView04"
+
                             android:layout_weight="1"
                             android:background="#d3d3d3"
                             android:gravity="center"
@@ -79,7 +87,7 @@
                             android:textColor="#000000" />
 
                         <TextView
-                            android:id="@+id/TextView04"
+
                             android:layout_weight="1"
                             android:background="#cac9c9"
                             android:gravity="center"
@@ -92,10 +100,10 @@
 
                     <!--it is for new row identifying -->
 
-                    <TableRow android:id="@+id/tableRow1">
+                    <TableRow>
 
                         <TextView
-                            android:id="@+id/TextView04"
+
                             android:layout_height="2dp"
                             android:layout_weight="1"
                             android:background="#a97676"
@@ -107,13 +115,13 @@
                     <!-- new new Row 2 with 3 columns -->
 
                     <TableRow
-                        android:id="@+id/tableRow1"
+
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
 
                         <LinearLayout
-                            android:id="@+id/TextView04"
+
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:background="#dcdcdc"
@@ -148,7 +156,7 @@
                         </LinearLayout>
 
                         <TextView
-                            android:id="@+id/TextView04"
+
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:background="#d3d3d3"
@@ -159,7 +167,7 @@
 
 
                         <LinearLayout
-                            android:id="@+id/TextView04"
+
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:background="#dcdcdc"
@@ -198,10 +206,10 @@
 
                     <!--it is for new row identifying -->
 
-                    <TableRow android:id="@+id/tableRow1">
+                    <TableRow>
 
                         <TextView
-                            android:id="@+id/TextView04"
+
                             android:layout_height="2dp"
                             android:layout_weight="1"
                             android:background="#a97676"
@@ -213,13 +221,13 @@
                     <!-- new new Row 2 with 3 columns -->
 
                     <TableRow
-                        android:id="@+id/tableRow1"
+
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
 
                         <LinearLayout
-                            android:id="@+id/TextView04"
+
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:background="#dcdcdc"
@@ -254,7 +262,7 @@
                         </LinearLayout>
 
                         <TextView
-                            android:id="@+id/TextView04"
+
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:background="#d3d3d3"
@@ -265,7 +273,7 @@
 
 
                         <LinearLayout
-                            android:id="@+id/TextView04"
+
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:background="#dcdcdc"
@@ -302,38 +310,13 @@
 
                     </TableRow>
 
-
-                    <!-- Row 3 with 2 columns -->
-                    <TableRow
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal">
-
-                        <TextView
-                            android:id="@+id/TextView04"
-                            android:layout_weight="1"
-                            android:background="#b0b0b0"
-                            android:gravity="center"
-                            android:padding="18dip"
-                            android:text="Row 3 column 1"
-                            android:textColor="#000000" />
-
-                        <TextView
-                            android:id="@+id/TextView09"
-                            android:layout_weight="1"
-                            android:background="#a09f9f"
-                            android:gravity="center"
-                            android:padding="18dip"
-                            android:text="Row 3 column 2"
-                            android:textColor="#000000" />
-                    </TableRow>
 
                 </TableLayout>
 
                 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="@dimen/default_card_height"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/default_card_height"
                     android:background="#ffffff"
                     android:shrinkColumns="*"
                     android:stretchColumns="*">
@@ -352,7 +335,7 @@
                             android:layout_span="3"
                             android:background="#b0b0b0"
                             android:padding="18dip"
-                            android:text="positive"
+                            android:text="negative"
                             android:textColor="#000"
                             android:textSize="18dp" />
 
@@ -363,12 +346,13 @@
 
 
                     <TableRow
-                        android:id="@+id/tableRow1"
+
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
                         <TextView
-                            android:id="@+id/TextView04"
+
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:background="#dcdcdc"
                             android:gravity="center"
@@ -377,21 +361,24 @@
                             android:textColor="#000000" />
 
                         <TextView
-                            android:id="@+id/TextView04"
+
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:background="#d3d3d3"
                             android:gravity="center"
                             android:padding="20dip"
-                            android:text="am"
+                            android:text="am not"
                             android:textColor="#000000" />
 
                         <TextView
-                            android:id="@+id/TextView04"
+
+                            android:layout_width="wrap_content"
                             android:layout_weight="1"
                             android:background="#cac9c9"
                             android:gravity="center"
                             android:padding="20dip"
-                            android:text="(I'm)"
+                            android:text="(I'm not or i am not )"
+                            android:textAlignment="center"
                             android:textColor="#000000"
                             android:textIsSelectable="true" />
 
@@ -399,10 +386,10 @@
 
                     <!--it is for new row identifying -->
 
-                    <TableRow android:id="@+id/tableRow1">
+                    <TableRow>
 
                         <TextView
-                            android:id="@+id/TextView04"
+
                             android:layout_height="2dp"
                             android:layout_weight="1"
                             android:background="#a97676"
@@ -414,13 +401,13 @@
                     <!-- new new Row 2 with 3 columns -->
 
                     <TableRow
-                        android:id="@+id/tableRow1"
+
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
 
                         <LinearLayout
-                            android:id="@+id/TextView04"
+
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:background="#dcdcdc"
@@ -455,18 +442,18 @@
                         </LinearLayout>
 
                         <TextView
-                            android:id="@+id/TextView04"
+
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:background="#d3d3d3"
                             android:gravity="center"
                             android:padding="20dip"
-                            android:text="is"
+                            android:text="is not"
                             android:textColor="#000000" />
 
 
                         <LinearLayout
-                            android:id="@+id/TextView04"
+
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:background="#dcdcdc"
@@ -479,7 +466,7 @@
                                 android:layout_gravity="center"
                                 android:gravity="center"
                                 android:padding="6dip"
-                                android:text="(he's)"
+                                android:text="(he's not or he is not )"
                                 android:textColor="#000000" />
 
                             <TextView
@@ -488,7 +475,7 @@
                                 android:layout_gravity="center"
                                 android:gravity="center"
                                 android:padding="6dip"
-                                android:text="(she's)"
+                                android:text="(she's not or she is not)"
                                 android:textColor="#000000" />
 
                             <TextView
@@ -496,7 +483,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:text="(it's)"
+                                android:text="(it's not or it is not)"
                                 android:textColor="#000000" />
                         </LinearLayout>
 
@@ -505,10 +492,10 @@
 
                     <!--it is for new row identifying -->
 
-                    <TableRow android:id="@+id/tableRow1">
+                    <TableRow>
 
                         <TextView
-                            android:id="@+id/TextView04"
+
                             android:layout_height="2dp"
                             android:layout_weight="1"
                             android:background="#a97676"
@@ -520,13 +507,13 @@
                     <!-- new new Row 2 with 3 columns -->
 
                     <TableRow
-                        android:id="@+id/tableRow1"
+
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
 
                         <LinearLayout
-                            android:id="@+id/TextView04"
+
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:background="#dcdcdc"
@@ -561,7 +548,7 @@
                         </LinearLayout>
 
                         <TextView
-                            android:id="@+id/TextView04"
+
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:background="#d3d3d3"
@@ -572,7 +559,7 @@
 
 
                         <LinearLayout
-                            android:id="@+id/TextView04"
+
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:background="#dcdcdc"
@@ -617,7 +604,7 @@
                         android:gravity="center_horizontal">
 
                         <TextView
-                            android:id="@+id/TextView04"
+
                             android:layout_weight="1"
                             android:background="#b0b0b0"
                             android:gravity="center"
@@ -626,7 +613,7 @@
                             android:textColor="#000000" />
 
                         <TextView
-                            android:id="@+id/TextView09"
+
                             android:layout_weight="1"
                             android:background="#a09f9f"
                             android:gravity="center"
@@ -639,6 +626,9 @@
 
 
             </LinearLayout>
+
+
         </LinearLayout>
     </ScrollView>
+
 </android.support.constraint.ConstraintLayout>
