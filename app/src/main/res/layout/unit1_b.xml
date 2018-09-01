@@ -554,7 +554,7 @@
                             android:background="#d3d3d3"
                             android:gravity="center"
                             android:padding="20dip"
-                            android:text="are"
+                            android:text="are not"
                             android:textColor="#000000" />
 
 
@@ -572,7 +572,7 @@
                                 android:layout_gravity="center"
                                 android:gravity="center"
                                 android:padding="6dip"
-                                android:text="(we're)"
+                                android:text="(we're not or we are not)"
                                 android:textColor="#000000" />
 
                             <TextView
@@ -581,7 +581,7 @@
                                 android:layout_gravity="center"
                                 android:gravity="center"
                                 android:padding="6dip"
-                                android:text="(you're)"
+                                android:text="(you're not od you are not)"
                                 android:textColor="#000000" />
 
                             <TextView
@@ -597,32 +597,333 @@
                     </TableRow>
 
 
-                    <!-- Row 3 with 2 columns -->
-                    <TableRow
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal">
-
-                        <TextView
-
-                            android:layout_weight="1"
-                            android:background="#b0b0b0"
-                            android:gravity="center"
-                            android:padding="18dip"
-                            android:text="Row 3 column 1"
-                            android:textColor="#000000" />
-
-                        <TextView
-
-                            android:layout_weight="1"
-                            android:background="#a09f9f"
-                            android:gravity="center"
-                            android:padding="18dip"
-                            android:text="Row 3 column 2"
-                            android:textColor="#000000" />
-                    </TableRow>
 
                 </TableLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top|center"
+                        android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:checked="true"
+                            android:foregroundTint="@color/colorPrimary" />
+
+                        <Button
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="I'm cold. Can you close the window, please?"
+                            android:textAllCaps="false"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top|center"
+                        android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:checked="true"
+                            android:foregroundTint="@color/colorPrimary" />
+
+                        <Button
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="I'm 32 years old. My sister is 29."
+                            android:textAllCaps="false"
+                            android:textColor="#a18879" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top|center"
+                        android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:checked="true"
+                            android:foregroundTint="@color/colorPrimary" />
+
+                        <Button
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Steve is ill. He's in bed"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top|center"
+                        android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:checked="true"
+                            android:foregroundTint="@color/colorPrimary" />
+
+                        <Button
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My borother is afraid of dogs."
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top|center"
+                        android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:checked="true"
+                            android:foregroundTint="@color/colorPrimary" />
+
+                        <Button
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="it's ten o'clock. You're late again."
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top|center"
+                        android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:checked="true"
+                            android:foregroundTint="@color/colorPrimary" />
+
+                        <Button
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ann and I are good freiends."
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top|center"
+                        android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:checked="true"
+                            android:foregroundTint="@color/colorPrimary" />
+
+                        <Button
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="your keys are on the table."
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top|center"
+                        android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:checked="true"
+                            android:foregroundTint="@color/colorPrimary" />
+
+                        <Button
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="I'm tired, but iI'm not hungry."
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top|center"
+                        android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:checked="true"
+                            android:foregroundTint="@color/colorPrimary" />
+
+                        <Button
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tom isn't interested in politics. He's interested in music."
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top|center"
+                        android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:checked="true"
+                            android:foregroundTint="@color/colorPrimary" />
+
+                        <Button
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jane isn't a teacher. She's a student."
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top|center"
+                        android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:checked="true"
+                            android:foregroundTint="@color/colorPrimary" />
+
+                        <Button
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="those people are not English. They are American."
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top|center"
+                        android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:checked="true"
+                            android:foregroundTint="@color/colorPrimary" />
+
+                        <Button
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="It's sunny today, but it isn't warn. "
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+
+
+                    </LinearLayout>
+
+
+
+
+
+
 
 
             </LinearLayout>

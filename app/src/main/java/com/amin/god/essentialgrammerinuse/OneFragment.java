@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,23 +29,25 @@ public class OneFragment extends Fragment {
         assert getArguments() != null;
         String strtext = getArguments().getString("segment");
         int unit_number = getArguments().getInt("unit_number");
-        String format = String.format("unit%d_a", unit_number);
-//        int resId = getResId(format, Layout.class);
-        int resID = container.getContext().getResources().getIdentifier(format, "layout", getContext().getPackageName());
-
         assert strtext != null;
         switch (strtext) {
             case "A":
+                String format = String.format("unit%d_a", unit_number);
+//        int resId = getResId(format, Layout.class);
+                int resID = container.getContext().getResources().getIdentifier(format, "layout", getContext().getPackageName());
                 return inflater.inflate(resID, container, false);
             case "B":
-                return inflater.inflate(R.layout.unit1_b, container, false);
+                resID = container.getContext().getResources().getIdentifier(String.format("unit%d_b", unit_number), "layout", getContext().getPackageName());
+                return inflater.inflate(resID, container, false);
             case "C":
-                return inflater.inflate(R.layout.unit1_c, container, false);
+                resID = container.getContext().getResources().getIdentifier(String.format("unit%d_c", unit_number), "layout", getContext().getPackageName());
+                return inflater.inflate(resID, container, false);
         }
 
         return inflater.inflate(R.layout.fragment_one, container, false);
 
     }
+
     public static int getResId(String resName, Class<?> c) {
 
         try {
@@ -57,6 +58,7 @@ public class OneFragment extends Fragment {
             return -1;
         }
     }
+
     private int returnResoure(int unit_number) {
         switch (unit_number) {
             case 1:

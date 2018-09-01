@@ -2,5 +2,312 @@
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
 
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_card_height"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="150dp"
+                android:layout_marginLeft="@dimen/default_card_height"
+                android:layout_marginRight="@dimen/default_card_height"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:scrollbars="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|center"
+                    android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Where..?/What... ?/Who ?/ How ...?/Why ...?"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimaryDark" />
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|center"
+                    android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:checked="true"
+                        android:foregroundTint="@color/colorPrimary" />
+
+                    <Button
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Where is your mother? Is she at home?"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|center"
+                    android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:checked="true"
+                        android:foregroundTint="@color/colorPrimary" />
+
+                    <Button
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Where are you from?' 'Canada.'"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|center"
+                    android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:checked="true"
+                        android:foregroundTint="@color/colorPrimary" />
+
+                    <Button
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="'What colour is your car?' 'It's red'"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|center"
+                    android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:checked="true"
+                        android:foregroundTint="@color/colorPrimary" />
+
+                    <Button
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 'How old is Joe?' 'He's 24'"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|center"
+                    android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkBox1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:checked="true"
+                        android:foregroundTint="@color/colorPrimary" />
+
+                    <Button
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="How are your parents? Are they well?"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|center"
+                    android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkBox1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:checked="true"
+                        android:foregroundTint="@color/colorPrimary" />
+
+                    <Button
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="These postcards are nice. How much are they?"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|center"
+                    android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkBox1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:checked="true"
+                        android:foregroundTint="@color/colorPrimary" />
+
+                    <Button
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="This hotel isn't very good. Why is it so expensive?"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary" />
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|center"
+                    android:layout_marginHorizontal="@dimen/ic_album_overflow_margin_top"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <Button
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="what's = what is; who's =  who is; how's  = how is; where's = where is"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimaryDark" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|center"
+                    android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkBox1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:checked="true"
+                        android:foregroundTint="@color/colorPrimary" />
+
+                    <Button
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="What's the time? Where's Lucy?"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|center"
+                    android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkBox1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:checked="true"
+                        android:foregroundTint="@color/colorPrimary" />
+
+                    <Button
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Who's that man? How's your father?"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary" />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
 </android.support.constraint.ConstraintLayout>

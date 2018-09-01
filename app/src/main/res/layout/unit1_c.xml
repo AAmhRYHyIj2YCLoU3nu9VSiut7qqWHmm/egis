@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ScrollView
@@ -23,21 +25,15 @@
                 android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
                 android:orientation="horizontal">
 
-                <CheckBox
-                    android:id="@+id/checkBox0"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:checked="true"
-                    android:foregroundTint="@color/colorPrimary" />
 
                 <Button
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="I'm American.I'm from Chicago."
+                    android:text="that's = that is , there's = there is , here's = here is "
                     android:textAllCaps="false"
-                    android:textColor="@color/colorPrimary" />
+                    android:textColor="@color/red"
+                    android:textStyle="bold|italic" />
             </LinearLayout>
 
             <LinearLayout
@@ -60,34 +56,7 @@
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="I'm American.I'm from Chicago."
-                    android:textAllCaps="false"
-                    android:textColor="@color/colorPrimary" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="top|center"
-                android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
-                android:gravity="start"
-                android:orientation="horizontal">
-
-                <CheckBox
-                    android:id="@+id/checkBox1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:checked="true"
-                    android:foregroundTint="@color/colorPrimary" />
-
-                <Button
-                    style="?android:attr/borderlessButtonStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="I'm American.I'm from Chicago."
+                    android:text="Thank you. that's very kind of you"
                     android:textAllCaps="false"
                     android:textColor="@color/colorPrimary" />
 
@@ -114,7 +83,7 @@
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="I'm American.I'm from Chicago."
+                    android:text="Look! there's Chris."
                     android:textAllCaps="false"
                     android:textColor="@color/colorPrimary" />
 
@@ -141,200 +110,12 @@
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="I'm American.I'm from Chicago."
+                    android:text="Here's your key. 'Thank you.'"
                     android:textAllCaps="false"
                     android:textColor="@color/colorPrimary" />
 
 
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="top|center"
-                android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
-                android:gravity="start"
-                android:orientation="horizontal">
-
-                <CheckBox
-                    android:id="@+id/checkBox1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:checked="true"
-                    android:foregroundTint="@color/colorPrimary" />
-
-                <Button
-                    style="?android:attr/borderlessButtonStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="I'm American.I'm from Chicago."
-                    android:textAllCaps="false"
-                    android:textColor="@color/colorPrimary" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="top|center"
-                android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
-                android:gravity="start"
-                android:orientation="horizontal">
-
-                <CheckBox
-                    android:id="@+id/checkBox1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:checked="true"
-                    android:foregroundTint="@color/colorPrimary" />
-
-                <Button
-                    style="?android:attr/borderlessButtonStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="I'm American.I'm from Chicago."
-                    android:textAllCaps="false"
-                    android:textColor="@color/colorPrimary" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="top|center"
-                android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
-                android:gravity="start"
-                android:orientation="horizontal">
-
-                <CheckBox
-                    android:id="@+id/checkBox1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:checked="true"
-                    android:foregroundTint="@color/colorPrimary" />
-
-                <Button
-                    style="?android:attr/borderlessButtonStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="I'm American.I'm from Chicago."
-                    android:textAllCaps="false"
-                    android:textColor="@color/colorPrimary" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="top|center"
-                android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
-                android:gravity="start"
-                android:orientation="horizontal">
-
-                <CheckBox
-                    android:id="@+id/checkBox1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:checked="true"
-                    android:foregroundTint="@color/colorPrimary" />
-
-                <Button
-                    style="?android:attr/borderlessButtonStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="I'm American.I'm from Chicago."
-                    android:textAllCaps="false"
-                    android:textColor="@color/colorPrimary" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="top|center"
-                android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
-                android:gravity="start"
-                android:orientation="horizontal">
-
-                <CheckBox
-                    android:id="@+id/checkBox1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:checked="true"
-                    android:foregroundTint="@color/colorPrimary" />
-
-                <Button
-                    style="?android:attr/borderlessButtonStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="I'm American.I'm from Chicago."
-                    android:textAllCaps="false"
-                    android:textColor="@color/colorPrimary" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="top|center"
-                android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
-                android:gravity="start"
-                android:orientation="horizontal">
-
-                <CheckBox
-                    android:id="@+id/checkBox1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:checked="true"
-                    android:foregroundTint="@color/colorPrimary" />
-
-                <Button
-                    style="?android:attr/borderlessButtonStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="I'm American.I'm from Chicago."
-                    android:textAllCaps="false"
-                    android:textColor="@color/colorPrimary" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="top|center"
-                android:layout_marginHorizontal="@dimen/ic_album_overflow_width"
-                android:gravity="start"
-                android:orientation="horizontal">
-
-                <CheckBox
-                    android:id="@+id/checkBox1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:checked="true"
-                    android:foregroundTint="@color/colorPrimary" />
-
-                <Button
-                    style="?android:attr/borderlessButtonStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="I'm American.I'm from Chicago."
-                    android:textAllCaps="false"
-                    android:textColor="@color/colorPrimary" />
-            </LinearLayout>
-
-
 
         </LinearLayout>
     </ScrollView>
